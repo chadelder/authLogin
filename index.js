@@ -35,6 +35,6 @@ app.post('/api/object', crudController.create); //post
 //app.delete('/api/object/:id', crudController.removeIt);*/
 
 
-app.listen(3000, function () {  //localhost:3000
+app.listen(process.env.PORT || 3000, process.env.IP  || "0.0.0.0", function () {
   console.log('Example app listening on port 3000!')
 });
